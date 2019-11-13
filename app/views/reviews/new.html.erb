@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class= "col-sm-12 offset-sm-3">Add a new review</h1>
+  <div class="row col-sm-12 offset-sm-3">
+    <%= simple_form_for [@restaurant, @review] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
